@@ -92,7 +92,7 @@ import { mapGetters, mapActions, mapMutations } from 'vuex';
           this.$Progress.finish();
         }
       },
-      newRoomType() {
+    newRoomType() {
         this.clearErrors();
         this.clearForm();
         $("#modalDialog").modal('show')
@@ -131,7 +131,7 @@ import { mapGetters, mapActions, mapMutations } from 'vuex';
            })
            .catch(error => {
              console.log(error)
-            this.$Progress.fail();
+             this.$Progress.fail();
           });
         }
       }
