@@ -9,5 +9,4 @@ use Illuminate\Http\Request;
 
 Route::apiResource('room', 'API\RoomController');
 Route::apiResource('roomtype', 'API\RoomTypeController');
-
-Route::resource('members', 'MemberController');
+Route::resource('roomrate', 'RoomRateController');

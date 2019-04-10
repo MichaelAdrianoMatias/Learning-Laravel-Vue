@@ -16,12 +16,10 @@ class CreateRoomRateTable extends Migration
         Schema::create('room_rates', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code',30);
-            $table->unsignedInteger('type_id');
-            $table->foreign('type_id')->references('id')->on('room_types');
-            $table->string('category');
-            $table->float('rate',8,2);
-            $table->float('rateperhour',8,2);
-            $table->integer('hours');
+            $table->unsignedInteger('room_id')->nullable();
+            $table->foreign('room_id')->references('id')->on('rooms');
+            $table->decimal('rate',8,2);
+            $table->double('hours');
             $table->boolean('active')->default(1);
             $table->integer('created_by')->default(1);
             $table->timestamps();

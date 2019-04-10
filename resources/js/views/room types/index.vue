@@ -18,7 +18,7 @@
         </template>
         <template slot="rows">
           <tr v-for="type in getRoomTypes" :key="type.id">
-            <td>{{ type.code }}</td>
+            <td >{{ type.code }}</td>
             <td>{{ type.name }}</td>
             <td>{{ type.description }}</td>
             <td>{{ type.updated_at }}</td>
@@ -54,6 +54,11 @@
    </modal>
 </div>
 </template>
+
+<style scoped>
+
+</style>
+
 
 <script>
 import { mapGetters, mapActions, mapMutations } from 'vuex';
@@ -138,3 +143,4 @@ import { mapGetters, mapActions, mapMutations } from 'vuex';
     }
   }
 </script>
+

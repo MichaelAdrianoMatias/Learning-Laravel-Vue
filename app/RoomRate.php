@@ -1,14 +1,11 @@
 <?php
-
 namespace App;
-
 use Illuminate\Database\Eloquent\Model;
-
 class RoomRate extends Model
 {
-  
-    public function type() {
-        return $this->belongsTo('App\RoomType');
+    protected $guarded = ['id'];
+
+    public function room() {
+        return $this->belongsTo('App\Room','room_id');
     }
-    
 }

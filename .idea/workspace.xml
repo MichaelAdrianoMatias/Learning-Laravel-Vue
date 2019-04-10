@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ae9700-c121-4c83-a503-8136d979a4c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HIMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HIMS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Employee.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_13_103315_create_modules_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_13_105044_create_customers_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_13_153520_create_room_types_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_18_145755_create_rooms_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_18_145941_create_room_rate_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_19_124748_create_amenities_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_19_124748_create_room_amenities_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_25_152918_create_employees_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations 1/2019_03_29_152218_create_room_amenities_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/views/room types/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/room types/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/CrudGeneratorCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/CrudGeneratorCommand.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,6 +128,7 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/database/seeds/RoomAmenitiesTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/API/RoomController.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/CrudGeneratorCommand.php" />
       </list>
     </option>
   </component>
@@ -377,12 +360,12 @@
       <option name="presentableId" value="Default" />
       <updated>1553702376769</updated>
       <workItem from="1553702383175" duration="1897000" />
-      <workItem from="1554772138128" duration="2331000" />
+      <workItem from="1554772138128" duration="3017000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4228000" />
+    <option name="totallyTimeSpent" value="4914000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

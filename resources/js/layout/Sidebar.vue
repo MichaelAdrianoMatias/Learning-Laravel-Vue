@@ -18,9 +18,8 @@
             <ul class="treeview-menu">
               <li><router-link :to="{name:'Dashboard'}"><i class="fa fa-circle-o"></i> Room</router-link></li>
               <li><router-link :to="{name:'room.index'}"><i class="fa fa-circle-o"></i> Room</router-link></li>
-              <li><router-link :to="{name:'room.create'}"><i class="fa fa-circle-o"></i> Add Room</router-link></li>
+              <li><router-link :to="{name:'roomrate.index'}"><i class="fa fa-circle-o"></i> Room Rate</router-link></li>
               <li><router-link :to="{name:'roomtype.index'}"><i class="fa fa-circle-o"></i> Room Type</router-link></li>              
-              <li><router-link :to="{name: 'Login'}"><i class="fa fa-circle-o"></i> Login</router-link></li>
               <li><router-link :to="{name:'room.create'}"><i class="fa fa-circle-o"></i> New Room</router-link></li>
             </ul>
           </li>

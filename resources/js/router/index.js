@@ -13,6 +13,7 @@ import Dashboard from '../components/Dashboard.vue';
 /* pages routes */
 import roomRouter from './modules/room';
 import roomTypeRouter from './modules/roomtype';
+import roomRateRouter from './modules/roomrate';
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,7 @@ export default new VueRouter({
         },
         roomRouter,
         roomTypeRouter,
+        roomRateRouter
       ]
     },
     {
