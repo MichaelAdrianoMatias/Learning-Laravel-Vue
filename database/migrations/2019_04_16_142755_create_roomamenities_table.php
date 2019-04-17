@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateRoomAmenitiesTable extends Migration
+class CreateRoomamenitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -33,6 +33,6 @@ class CreateRoomAmenitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('room_amenities');
+        Schema::dropIfExists('roomamenities');
     }
 }

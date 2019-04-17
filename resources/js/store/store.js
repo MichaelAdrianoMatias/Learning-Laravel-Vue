@@ -9,6 +9,7 @@ import * as mutations from './mutations'
 import room from './modules/room'
 import roomtype from './modules/roomtype'
 import roomrate from './modules/roomrate'
+import amenities from './modules/amenities'
 
 Vue.use(Vuex)
 
@@ -19,7 +20,7 @@ export default new Vuex.Store({
   mutations,
   actions,
   modules: {
-    room, roomtype, roomrate
+    room, roomtype, roomrate, amenities
   },
 });
 

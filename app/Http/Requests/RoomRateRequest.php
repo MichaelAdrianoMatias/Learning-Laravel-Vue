@@ -9,11 +9,30 @@ class RoomRateRequest extends FormRequest
     }
     public function rules()
     {
-        return [
-            'code' => 'required|string:unique:room_rates,code,' .$this->id,
-            'hours' => 'required|integer',
-            'rate' => 'required|numeric',
-            'room_id' => 'required',
-        ];
+        switch($this->method())
+        {
+            case 'POST':
+            {
+                return [
+                    'code' => 'required|string|unique:room_rates',
+                    'hours' => 'required|integer',
+                    'rate' => 'required|numeric',
+                    'room_id' => 'required',
+                ];
+            }
+            case 'PUT':
+            case 'PATCH':
+            {
+                return [
+                    'code' => 'required|string:unique:room_rates,code,' .$this->id,
+                    'hours' => 'required|integer',
+                    'rate' => 'required|numeric',
+                    'room_id' => 'required',
+                ]; 
+            }
+            
+            
+        }
+       
     }
 }

@@ -27,7 +27,7 @@
             <td>{{ room.last_updated }}</td>
             <td>
               <button @click="editRoom(room)"  class="btn btn-primary btn-xs" data-toggle="tooltip" title="Edit Details"><span class="fa fa-edit alias"></span></button>
-              <button @click="deleteRoom(room)" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete Record"><span class="fa fa-edit alias"></span></button>
+              <button @click="deleteRoom(room)" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete Record"><span class="fa fa-trash alias"></span></button>
             </td>
           </tr>
         </template>
@@ -80,7 +80,7 @@ import { mapGetters, mapActions } from 'vuex';
       return {
         isNew: true,
         selectedData: '',
-        form: new form({
+        form: new Form({
           id: '',
           code: '',
           name: '',

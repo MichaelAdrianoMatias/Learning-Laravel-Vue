@@ -10,3 +10,5 @@ use Illuminate\Http\Request;
 Route::apiResource('room', 'API\RoomController');
 Route::apiResource('roomtype', 'API\RoomTypeController');
 Route::resource('roomrate', 'RoomRateController');
+Route::resource('amenities', 'AmenitiesController');
+Route::resource('roomamenities', 'RoomAmenitiesController');

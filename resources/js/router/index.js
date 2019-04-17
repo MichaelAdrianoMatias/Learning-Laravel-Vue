@@ -14,6 +14,7 @@ import Dashboard from '../components/Dashboard.vue';
 import roomRouter from './modules/room';
 import roomTypeRouter from './modules/roomtype';
 import roomRateRouter from './modules/roomrate';
+import amenitiesRouter from './modules/amenities';
 
 Vue.use(VueRouter)
 
@@ -33,7 +34,9 @@ export default new VueRouter({
         },
         roomRouter,
         roomTypeRouter,
-        roomRateRouter
+        roomRateRouter,
+        amenitiesRouter
+        
       ]
     },
     {

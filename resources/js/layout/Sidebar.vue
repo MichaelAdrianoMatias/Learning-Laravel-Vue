@@ -20,7 +20,7 @@
               <li><router-link :to="{name:'room.index'}"><i class="fa fa-circle-o"></i> Room</router-link></li>
               <li><router-link :to="{name:'roomrate.index'}"><i class="fa fa-circle-o"></i> Room Rate</router-link></li>
               <li><router-link :to="{name:'roomtype.index'}"><i class="fa fa-circle-o"></i> Room Type</router-link></li>              
-              <li><router-link :to="{name:'room.create'}"><i class="fa fa-circle-o"></i> New Room</router-link></li>
+              <li><router-link :to="{name:'amenities.index'}"><i class="fa fa-circle-o"></i> Amenities</router-link></li>
             </ul>
           </li>
         </ul>

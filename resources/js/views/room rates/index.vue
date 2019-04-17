@@ -20,12 +20,12 @@
           <tr v-for="roomrate in getRoomRates" :key="roomrate.id">
             
             <td>{{ roomrate.code }}</td>
-            <td>{{ roomrate.room_id }}</td>
+            <td>{{ roomrate.room.name }}</td>
             <td>{{ roomrate.rate }}</td>
             <td>{{ roomrate.hours }}</td>
             <td>
               <button @click="editRoomRate(roomrate)" class="btn btn-primary btn-xs" data-toggle="tooltip" title="Edit Details"><span class="fa fa-edit alias"></span></button>
-              <button @click="deleteRoomRate(roomrate)" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete Record"><span class="fa fa-edit alias"></span></button>
+              <button @click="deleteRoomRate(roomrate)" class="btn btn-danger btn-xs" data-toggle="tooltip" title="Delete Record"><span class="fa fa-trash alias"></span></button>
             </td>
           </tr>
         </template>

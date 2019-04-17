@@ -9,7 +9,7 @@ class {{modelName}}Controller extends Controller
         ${{modelNamePluralLowerCase}} = {{modelName}}::latest()->get();
         return response()->json(${{modelNamePluralLowerCase}});
     }
-    public function store({{modelName}}Request $request)
+    public function store(Request $request)
     {
         ${{modelNameSingularLowerCase}} = {{modelName}}::create($request->all());
         return response()->json(${{modelNameSingularLowerCase}}, 201);
@@ -19,7 +19,7 @@ class {{modelName}}Controller extends Controller
         ${{modelNameSingularLowerCase}} = {{modelName}}::findOrFail($id);
         return response()->json(${{modelNameSingularLowerCase}});
     }
-    public function update({{modelName}}Request $request, $id)
+    public function update(Request $request, $id)
     {
         ${{modelNameSingularLowerCase}} = {{modelName}}::findOrFail($id);
         ${{modelNameSingularLowerCase}}->update($request->all());

@@ -6,7 +6,7 @@ class RoomRateController extends Controller
 {
     public function index()
     {
-        $roomrates = RoomRate::latest()->get();
+        $roomrates = RoomRate::latest()->with('room')->get();
        
         return response()->json($roomrates);
     }
@@ -14,13 +14,13 @@ class RoomRateController extends Controller
     {
         $roomrate = RoomRate::create($request->all());
         return ([
-                'id' => $roomrate->id,
-                'code' => $roomrate->code,
-                'room_id' => $roomrate->room_id,
-                'hours' => $roomrate->hours,
-                'rate' => $roomrate->rate
-                
-            ]);
+            'id' => $roomrate->id,
+            'code' => $roomrate->code,
+            'room_id' => $roomrate->room_id,
+            'hours' => $roomrate->hours,
+            'rate' => $roomrate->rate
+            
+        ]);
 
     }
     public function show($id)
